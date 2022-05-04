@@ -1,0 +1,16 @@
+services:
+  ruby:
+    image: ruby:3.1.2-alpine3.15
+    working_dir: /home/doubles
+    command: ["rake", "test"]
+    network_mode: "none"
+    volumes:
+      - type: bind
+        source: lib
+        target: /home/doubles/lib
+      - type: bind
+        source: test
+        target: /home/doubles/test
+      - type: bind
+        source: Rakefile
+        target: /home/doubles/Rakefile
