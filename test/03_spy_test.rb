@@ -1,3 +1,6 @@
+# 👩‍🏫 03_spy_test missions:
+#    - Make the tests pass by replacing the use of the production Auditer.new class with a spy test double
+
 require "minitest/autorun"
 require "03_spy"
 
@@ -10,6 +13,8 @@ require "03_spy"
 # end
 
 # ✍️ END
+
+# 🙅‍♀️ YOU SHOULD ONLY CHANGE THE AUDITER.NEW INSTANTIATIONS IN THIS CODE
 
 class TestAdderSpy < Minitest::Test
   def test_adder_is_fast
@@ -65,3 +70,5 @@ class Stopwatch
     @stopped - @started
   end
 end
+
+# 🙅‍♀️ END
