@@ -53,7 +53,18 @@ You can run the test suite with the following command. The `--no-log-prefix` is 
 $ docker compose up --no-log-prefix
 ```
 
-When you're done with the workshops, the following command will tear down any remaining resources:
+By default, Docker will run all the test files. If you want to run only one of the test suites, you can send in an RACK_ENV environment variable:
+
+```
+$ RACK_ENV=test:warmup docker compose up --no-log-prefix
+$ RACK_ENV=test:dummy docker compose up --no-log-prefix
+$ RACK_ENV=test:stub docker compose up --no-log-prefix
+$ RACK_ENV=test:spy docker compose up --no-log-prefix
+$ RACK_ENV=test:mock docker compose up --no-log-prefix
+$ RACK_ENV=test:fake docker compose up --no-log-prefix
+```
+
+When you're done with the workshop, the following command will tear down any remaining resources:
 
 ```
 $ docker compose down
