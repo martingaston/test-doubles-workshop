@@ -21,6 +21,23 @@ class MockTest < Minitest::Test
     authorizer_mock.verify
     assert_equal secret_location, result
   end
+
+  def test_a_failed_authorisation_will_raise
+    # Arrange
+    username = "mr-hacker"
+    password = "hacking-the-planet"
+    authorizer_mock = Minitest::Mock.new
+    secret = "The treasure is in the castle"
+
+    vault = Vault.new(secret_location, authorizer_mock)
+
+    # Act
+    authorizer_mock.expect :authorize, false, [username, password]
+
+    # Assert
+    authorizer_mock.verify
+    assert_raises { vault.get username, password }
+  end
 end
 
 # 🙅‍♀️ DO NOT CHANGE THIS CODE - END

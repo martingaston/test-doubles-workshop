@@ -1,16 +1,22 @@
 require "minitest/autorun"
 require "00_warmup"
 
+# ✍️ WRITE YOUR CODE HERE
+
+# ✍️ END
+
 class DiceRollerTest < Minitest::Test
   def test_rolling_the_dice_100_times_returns_100_results
     # Arrange
     sides = 6
-    dice_roller = DiceRoller.new(sides)
+
+    # ✍️ You may need to instantiate your new code here
+    subject = DiceRoller.new(sides)
 
     # Act
     results = []
     100.times do
-      results << dice_roller.roll
+      results << subject.roll
     end
 
     # Assert
@@ -20,12 +26,14 @@ class DiceRollerTest < Minitest::Test
   def test_rolling_the_dice_100_times_relies_on_dependency_injection
     # Arrange
     sides = 6
-    dice_roller = DiceRoller.new(sides)
+
+    # ✍️ You may need to instantiate your new code here
+    subject = DiceRoller.new(sides)
 
     # Act
     results = []
     100.times do
-      results << dice_roller.roll
+      results << subject.roll
     end
 
     # Assert

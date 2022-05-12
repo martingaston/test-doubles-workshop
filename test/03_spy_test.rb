@@ -11,6 +11,8 @@ require "03_spy"
 
 # ✍️ END
 
+# 🙅‍♀️ YOU SHOULD ONLY CHANGE THE AUDITER.NEW INSTANTIATIONS IN THIS CODE
+
 class TestAdderSpy < Minitest::Test
   def test_adder_is_fast
     # Arrange
@@ -65,3 +67,5 @@ class Stopwatch
     @stopped - @started
   end
 end
+
+# 🙅‍♀️ END

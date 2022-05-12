@@ -1,6 +1,6 @@
 class DiceRoller
   # 👍 you can edit this method
-  def initialize(sides)
+  def initialize(sides, rng)
     @sides = sides
   end
 

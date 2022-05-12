@@ -11,6 +11,8 @@ require "02_stub"
 
 # ✍️ END
 
+# 🙅‍♀️ DO NOT CHANGE THIS CODE - START
+
 class GuessingGameStubTest < Minitest::Test
   def test_will_return_found_if_the_guess_is_correct
     # Arrange
@@ -25,6 +27,10 @@ class GuessingGameStubTest < Minitest::Test
     assert_equal FOUND, result
   end
 
+  # 🙅‍♀️ DO NOT CHANGE THIS CODE - END
+
+  # ✍️ WRITE YOUR TESTS HERE
+
   def test_will_return_too_low_if_the_guess_is_too_low
     fail "TODO: implement me"
   end
@@ -33,3 +39,5 @@ class GuessingGameStubTest < Minitest::Test
     fail "TODO: implement me"
   end
 end
+
+# ✍️ END
