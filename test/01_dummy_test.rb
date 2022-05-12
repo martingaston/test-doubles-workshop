@@ -1,3 +1,6 @@
+# 👩‍🏫 01_dummy_test missions:
+#    - Make the tests pass by using a dummy test double to instantiate GuessingGameDummy (lib/01_dummy.rb)
+
 require "minitest/autorun"
 require "01_dummy"
 

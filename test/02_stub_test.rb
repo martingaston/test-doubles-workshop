@@ -1,13 +1,16 @@
+# 👩‍🏫 02_stub_test missions:
+#    - Make the tests pass by using one or more stub test doubles
+#    - Add test cases for guesses that are too low and too high
+
 require "minitest/autorun"
 require "02_stub"
 
 # ✍️ WRITE YOUR TEST DOUBLE HERE
-
-# class MyCoolTestDouble
-#   def cool_method
-#     "cool"
-#   end
-# end
+class InputStub
+  def initialize
+    raise "please implement me"
+  end
+end
 
 # ✍️ END
 
@@ -17,7 +20,7 @@ class GuessingGameStubTest < Minitest::Test
   def test_will_return_found_if_the_guess_is_correct
     # Arrange
     number = 50
-    input = nil
+    input = InputStub.new
     subject = GuessingGameStub.new(number, input)
 
     # Act

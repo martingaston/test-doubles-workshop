@@ -1,3 +1,7 @@
+# 👩‍🏫 05_fake_test missions:
+#    - Implement the FakeRepository in order to make the tests pass. Take a look at CrudApp in lib/05_fake for API details.
+#    - If you're struggling, an in-memory data store using a HashMap/object is probably the most straightforward route.
+
 require "minitest/autorun"
 require "05_fake"
 
@@ -54,8 +58,8 @@ class TestCrudApp < Minitest::Test
     favourite_pokemon = "Pikachu"
 
     # Act
-    id = subject.create(username, old_favourite)
-    deleted = subject.update(id, username, new_favourite)
+    id = subject.create(username, favourite_pokemon)
+    deleted = subject.delete(id)
 
     # Assert
     assert deleted

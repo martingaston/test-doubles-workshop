@@ -1,3 +1,6 @@
+# 👩‍🏫 03_spy_test missions:
+#    - Make the tests pass by replacing the use of the production Auditer.new class with a spy test double
+
 require "minitest/autorun"
 require "03_spy"
 
