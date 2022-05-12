@@ -177,14 +177,21 @@ This repo contains a series of exercises designed to give you exposure to each t
     ├── 02_stub_test.rb
     ├── 03_spy_test.rb
     ├── 04_mock_test.rb
-    └── 05_fake_test.rb
+    └── 05_fake_test.rb <-- stop here!
 ```
 
 #### 🤔 Try to give yourself 3-4 minutes with each test suite and move on. Do not worry if you cannot get the tests to pass!  
 
+## HVAC Exercise (ETA 20m)
+
+A slightly bigger task sits within `lib/06_hvac.rb` and `test/06_hvac_test.rb`. Both files are commented with instructions. This task can either be done solo, in pairs, or as a mob - this can be a group decision 😊
+
+Like with the other tasks, you can limit the test suite to `test/06_hvac_test.rb` with the following command: `$ RACK_ENV=test:hvac docker compose up --no-log-prefix`
+
+#### 🧠 The goal of the activity during the workshop is to start thinking about incorporating test doubles into an exercise from scratch, so do not be discouraged if you do not commit many lines of code. 
 
 ## Feedback
-Please take a moment to provide feedback on the workshop: 
+Whew! You're done! Please take a moment to provide feedback on the workshop: 
 https://forms.gle/LLgkMWeaUKPk6cHP8
 
 PRs and content suggestions are very much welcome, also.

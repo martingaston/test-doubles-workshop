@@ -36,6 +36,11 @@ namespace :test do
   task :fake do
     exec "ruby -I test:lib test/05_fake_test.rb"
   end
+
+  desc "run the test suite for 06_hvac_test.rb"
+  task :hvac do
+    exec "ruby -I test:lib test/06_hvac_test.rb"
+  end
 end
 
 task default: [:test]
