@@ -17,9 +17,19 @@ test("adds 1 + 2 to equal 3", () => {
 // TODO: use TDD to create a subtraction function that takes two numbers, subtracts one from the other and returns the result
 // ... look, I know it's a little hokey.
 
+function sub(a, b) {
+  throw new Error("not implemented!"); // edit this!
+}
+
+// test("subtracts 3 - 1 to equal 2", () => {
+//   const result = sub(3, 1);
+//
+//   expect(result).toBe(2);
+// });
+
 // TDD, part 2
 
 // we want to write a function that prints the result of sum(123, 456) to the console
 // e.g. console.log()... which has no return value
-//
-// 🤔 question: how do we test this?
+
+// 🤔 discussion: how do we test this?
