@@ -1,5 +1,7 @@
 # Test Doubles Workshop
 
+> ⚠️ This README.md requires updating to include JavaScript/psuedocode examples. Examples right now are written in Ruby. 
+
 ## Introduction
 
 "Test double" is an overarching (and debatably overloaded) term to define the action of replacing real/production code with a simplified _stand-in_ (like a stunt double in a movie) for the purposes of creating an automated test suite, predominantly within the object-oriented programming paradigm.
@@ -41,34 +43,7 @@ If this workshop does what it hopes to do, you'll finish up with the following:
 
 ### Setup
 
-This workshop uses the [Ruby](https://www.ruby-lang.org/en/) programming language because of its relative ease of use for the subject matter. You do not have to be a Ruby expert to participate, but _some_ knowledge of a dynamically typed language - e.g. JavaScript or Python - is probably essential.
-
-Code will be annotated to hopefully make the syntax more straightforward to those coming from other languages. If you're in doubt, feel free to ask for clarification!
-
-To simplify installation, this workshop will use [Docker Desktop](https://www.docker.com/products/docker-desktop/) to run a containerised environment. Shell commands will be given to follow that approach, but if you feel comfortable with Ruby (and have a local environment already setup) then please feel free to substitute with your own knowledge: `rake test` should have you sorted.
-
-You can run the test suite with the following command. The `--no-log-prefix` is optional but does make reading the output easier.
-
-```
-$ docker compose up --no-log-prefix
-```
-
-By default, Docker will run all the test files. If you want to run only one of the test suites, you can send in an RACK_ENV environment variable:
-
-```
-$ RACK_ENV=test:warmup docker compose up --no-log-prefix
-$ RACK_ENV=test:dummy docker compose up --no-log-prefix
-$ RACK_ENV=test:stub docker compose up --no-log-prefix
-$ RACK_ENV=test:spy docker compose up --no-log-prefix
-$ RACK_ENV=test:mock docker compose up --no-log-prefix
-$ RACK_ENV=test:fake docker compose up --no-log-prefix
-```
-
-When you're done with the workshop, the following command will tear down any remaining resources:
-
-```
-$ docker compose down
-```
+Tests are available in the `javascript` and `ruby` directories. They are roughly identical, with some slight edits here and there for the quirks of each language.
 
 As pairing is encouraged in this workshop, it also will be advantageous to have a setup that removes some of the barriers to collaborative editing. At time of writing, the [Live Share extension for VS Code](https://code.visualstudio.com/learn/collaboration/live-share) is perhaps the easiest way to get up and running here. 
 
